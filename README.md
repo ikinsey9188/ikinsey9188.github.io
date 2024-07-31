@@ -1,7 +1,7 @@
 
 # Google Store Chat App
 
-This repository contains the Google Store chat app, created using the steps provided in the [Vertex AI Conversation Codelab](https://codelabs.developers.google.com/codelabs/vertex-ai-conversation#0).
+This repository contains the Google Store chat app, created using the steps provided in the [Vertex AI Conversation Codelab](https://codelabs.developers.google.com/codelabs/vertex-ai-conversation#0). Click [https://ikinsey9188.github.io/](https://ikinsey9188.github.io/) to use.
 
 ## Table of Contents
 - [Introduction](#introduction)
