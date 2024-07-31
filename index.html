@@ -3,11 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dialogflow Messenger</title>
+    <title>Generative Chat App using Google Cloud with Vertex AI Conversation</title>
     <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('google_store.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            max-width: 500px;
+            border-radius: 10px;
+            position: absolute;
+            left: 5%;
+            top: 20%;
+            text-align: left;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            --df-messenger-font-color: #000;
+            --df-messenger-font-family: Google Sans;
+            --df-messenger-chat-background: #f3f6fc;
+            --df-messenger-message-user-background: #d3e3fd;
+            --df-messenger-message-bot-background: #fff;
+            bottom: 16px;
+            right: 16px;
+        }
+    </style>
 </head>
 <body>
+    <div class="content">
+        <h1>Generative Chat App using Google Cloud with Vertex AI Conversation</h1>
+        <p>Isaac Kinsey used Data Store Agent functionality in Vertex AI Conversation to build, configure, and deploy a virtual agent that can assist customers who have questions about products and devices in the Google Store, including phones, watches, laptops, smart home devices, and other consumer devices.</p>
+    </div>
     <df-messenger
       project-id="main-voltage-431109-k1"
       agent-id="66561e3c-20fe-43ec-90c4-b72a5abaa203"
@@ -17,18 +65,5 @@
        chat-title="Google Store">
       </df-messenger-chat-bubble>
     </df-messenger>
-    <style>
-      df-messenger {
-        z-index: 999;
-        position: fixed;
-        --df-messenger-font-color: #000;
-        --df-messenger-font-family: Google Sans;
-        --df-messenger-chat-background: #f3f6fc;
-        --df-messenger-message-user-background: #d3e3fd;
-        --df-messenger-message-bot-background: #fff;
-        bottom: 16px;
-        right: 16px;
-      }
-    </style>
 </body>
 </html>
